@@ -1,0 +1,12 @@
+div{
+ width: 100%;
+ background-color: brown;
+ height: 50px;
+}
+
+div a{
+    display: inline-block;
+    margin: 10px;
+    color: #ffffff;
+    
+}

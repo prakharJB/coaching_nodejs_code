@@ -1,0 +1,61 @@
+<%-include("../header")%>
+<div class="container">
+    <form action="/student/update/<%= info._id %>" method="post">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 mt-4">
+        
+            <div class="card border border-success my-4">
+                <div class="card-header bg-success"><h2 class="text-light">Update Students</h2></div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" class="form-control" value= "<%= info.full_name %>" name="full_name" placeholder="Full Name" />
+                        </div>
+                        <div class="form-group">
+                            <label>Age</label>
+                            <input type="text" class="form-control" value= "<%= info.age %>" placeholder="Age" name="age" />
+                        </div>
+                        <div class="form-group">
+                            <label>Gender</label>
+                            Male<input type="radio" name="Gender" <% if(info.Gender == "male"){ %> checked <% } %> value="male" />
+                            Female<input type="radio" name="Gender" <% if(info.Gender == "female"){ %> checked <% } %>value="female" />
+                        </div>
+                        <div class="form-group">
+                            <label>Address</label>
+                            <textarea class="form-control" placeholder="Address" name="address" ><%= info.address %></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>City</label>
+                            <select class="form-control" name="city">
+                                <option>Select</option>
+                                <option <% if(info.city == "Mumbai"){ %> selected <% } %> >Mumbai</option>
+                                <option <% if(info.city == "Indore"){ %> selected <% } %>>Indore</option>
+                                <option <% if(info.city == "Pune"){ %> selected <% } %>>Pune</option>
+                                <option <% if(info.city == "Banglore"){ %> selected <% } %>>Banglore</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Contact</label>
+                            <input type="text" class="form-control" value= "<%= info.contact %>" name="contact" placeholder="Contact" />
+                        </div>
+                        
+                    </div>
+                    <div class="card-footer bg-success">
+                        <input type="submit" value="Update" class="btn btn-light" />
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>    
+    </form>
+    
+    
+</div>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<%-include("../footer")%>

@@ -1,0 +1,44 @@
+<%-include("../header")%>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-6">
+
+            <h1>Detail of Student</h1>
+            <table class="table table-bordered">
+                <tr>
+                    <td>Full Name</td>
+                    <td><%= info.full_name %></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><%= info.address %></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td><%= info.Gender %></td>
+                </tr>
+                <tr>
+                    <td>Contact</td>
+                    <td><%= info.contact %></td>
+                </tr>
+                <tr>
+                    <td>city</td>
+                    <td><%= info.city %></td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td><%= info.age %></td>
+                </tr>
+
+            </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+
+<%-include("../footer")%>

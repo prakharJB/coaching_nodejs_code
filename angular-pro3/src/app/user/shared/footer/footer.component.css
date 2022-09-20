@@ -1,0 +1,9 @@
+div{
+    background-color: rgb(156, 16, 16);
+    height: 50px;
+    width: 100%;
+}
+div h2{
+    text-align: center;
+    color: #fff;
+}

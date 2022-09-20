@@ -1,0 +1,8 @@
+div{
+    min-height: 300px;
+    background-color: blue;
+    width: 200px;
+    float: left;
+    margin-left: 10px;
+    text-align: justify;
+}
